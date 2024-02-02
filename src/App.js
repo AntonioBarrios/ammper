@@ -1,12 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Results from './components/Results'
+import Header from './components/Header'
 import Transactions from './components/Transactions'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
+      <Header className = "header"/>
       <BrowserRouter>
         <Routes>
           <Route path = '/' element = {<Results></Results>}></Route>

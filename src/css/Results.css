@@ -1,0 +1,17 @@
+.results{
+    margin-top: 1rem;
+    background-color: rgb(33, 37, 41);
+    padding: 1rem;
+    border-radius: .5rem;
+    height: 80vh;
+}
+h6{
+    color: rgb(222,224,230) !important;
+    border-bottom:1px solid rgb(73,80,87);
+    line-height: 2.2rem !important;
+    margin-bottom: 2rem !important;
+}
+p{
+    color: rgb(222,224,230, .75) !important;
+    font-size: .8em;
+}
