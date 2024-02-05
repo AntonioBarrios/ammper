@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const allOperations = async (state) => {
-const res = await axios.get(
+const transactions = await axios.get(
       "https://sandbox.belvo.com/api/transactions/?page_size=100&link=8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
       {
         auth: {
@@ -10,7 +10,6 @@ const res = await axios.get(
         },
       }
     );
-    console.log({ res });
 }
 
 export {
