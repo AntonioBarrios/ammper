@@ -1,17 +1,19 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import {allOperations} from '../functions/ammperFunctions.js'
 import "../css/Results.css"
 
 
 const Results = () => {
+    const [transactions, setTransactions] = useState(null)
+
     useEffect(() => {
-        allOperations()
+        allOperations(setTransactions)
     },[])
 
     return (
        <div className="results">
         <h6>Last 3 Months balance</h6>
-        <p>Information here ...</p>
+        
        </div> 
     )
 }
