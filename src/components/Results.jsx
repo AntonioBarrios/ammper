@@ -1,5 +1,5 @@
 //import React, {useEffect, useState} from "react"
-import {allOperations} from '../functions/ammperFunctions.js'
+//import {allOperations} from '../functions/ammperFunctions.js'
 import "../css/Results.css"
 
 

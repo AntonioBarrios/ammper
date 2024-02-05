@@ -11,7 +11,7 @@ const transactions = await axios.get(
       }
     );
 }
-
+console.log(transactions)
 export {
     allOperations
 }
