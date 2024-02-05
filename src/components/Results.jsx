@@ -13,7 +13,14 @@ const Results = () => {
     return (
        <div className="results">
         <h6>Last 3 Months balance</h6>
-        
+        {transactions == null ?(
+            transactions.map(transaction =>(
+                <div key ={ transaction.id}>
+                    <p>{transaction.title}</p>
+                    <p>{transaction.completed}</p>
+                </div>
+            ))   
+        ) : ('No transactions')}
        </div> 
     )
 }
